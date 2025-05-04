@@ -12,6 +12,7 @@
     }
 
     .container { 
+        
       max-width: 700px; 
       margin: auto; 
       background: white;
@@ -19,10 +20,14 @@
       border-radius: 8px; 
       box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
       text-align: center; 
+      
+
+
     }
 
     button { padding: 12px 20px; background: #7898ba; color: white; border: none; border-radius: 4px; cursor: pointer; }
     button:hover { background: #6f7a86; }
+
 
     .modal {
       display: none;
@@ -93,6 +98,7 @@
         transform: translateY(0);
       }
     }
+
 
     .success-modal {
       display: none;
@@ -209,10 +215,14 @@
   </ul>
 
   <button onclick="openModal()">⚡ Book Your Chatbot Now</button>
-
+  <div style="margin-top:40px; font-size:14px; color:#444;">
+    <p><strong>Contact us:</strong></p>
+    <p>📱 WhatsApp: <a href="https://wa.me/919392200177" target="_blank" style="color:#405d7c;">+91 93922 00177</a></p>
+    <p>✉️ Email: <a href="mailto:ananyasista.biz@gmail.com" style="color:#4e6781;">ananyasista.biz@gmail.com</a></p>
+  </div>
+  
   <p style="margin-top:40px; font-size:12px; color:#777;">© 2025 Botmatics |</p>
 </div>
-
 
 <div id="myModal" class="modal">
   <div class="modal-content">
@@ -229,7 +239,6 @@
     </div>
   </div>
 </div>
-
 
 <div id="successModal" class="success-modal">
   <div class="success-content">
@@ -263,6 +272,18 @@
 
   </div>
 </div>
+
+<div class="faq-container" style="background:white; border-radius:8px; padding:30px; margin-top:60px; max-width:700px; margin-left:auto; margin-right:auto; box-shadow:0 2px 8px rgba(0,0,0,0.2);">
+    <h2 style="text-align:center; color:#333; margin-bottom:20px;">❓ Frequently Asked Questions</h2>
+    <div style="text-align:left; color:#444;">
+      <p><strong>• How quickly can the chatbot be installed?</strong><br>We install and configure your chatbot within 24 hours of receiving your details.</p>
+      <p><strong>• Do I need any coding knowledge?</strong><br>No — we handle the entire setup for you. No coding is required on your end.</p>
+      <p><strong>• Can the chatbot integrate with my existing website?</strong><br>Yes — we can integrate the chatbot on most websites, including WordPress, Shopify, and custom sites.</p>
+      <p><strong>• Is there any monthly fee?</strong><br>No — we charge a one-time setup fee. Optional maintenance or upgrades can be discussed separately.</p>
+      <p><strong>• What happens after I submit my details?</strong><br>We’ll contact you within 24 hours to finalize the integration and customizations.</p>
+    </div>
+  </div>
+  
 
 
 <div id="planModal" class="modal">
@@ -332,6 +353,7 @@
     const title = document.getElementById('planTitle');
     const details = document.getElementById('planDetails');
 
+    
     let content = '';
 
     if (plan === 'Basic Bot') {
@@ -373,3 +395,4 @@
 <script src="//code.tidio.co/vnafaslgh1eqbe0e01abby6hz2t4tsyh.js" async></script>
 </body>
 </html>
+
